@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Code&café</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img src="./assets/logo.png" alt="Logo" />
+        </a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#revies">Avaliações</a>
+          <a href="#address">Endereço</a>
+        </nav>
+
+        <div class="icons">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/pastel-glyph/128/FAB005/search--v1.png"
+            alt="search"
+          />
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/glyph-neue/64/FAB005/shopping-cart.png"
+            alt="shopping-cart"
+          />
+        </div>
+      </section>
+    </header>
+
+    <div class="homeContainer">
+      <section id="home">
+        <div class="content">
+          <h3>
+            Tudo se torna melhor quando <strong>está codando</strong> junto de
+            uma bela xícara de café ☕😋
+          </h3>
+          <p>
+            aqui o código só sobrevive porque a gente despeja litros de café
+            preto que poderia ressuscitar defunto. Somos movidos a café forte,
+            memes sem graça e aquele desespero pós-deploy em sexta-feira. Então
+            senta aí, toma esse veneno e prepara o cérebro pra fritar, porque
+            bug é nosso pão de cada dia e a sanidade é luxo que nem pagamos.
+            Aqui é café, desespero e loucura — sério, não tem muita diferença
+            entre eles. (eu acho)
+          </p>
+          <a class="btn" href="#">Pegue o seu agora mesmo</a>
+        </div>
+      </section>
+    </div>
+
+    <section id="about" class="about">
+      <h2 class="title">Sobre <span>nós</span></h2>
+      <div class="row">
+        <div class="containerImage">
+          <img src="./assets/about-img.jpg" alt="sobre nós" />
+        </div>
+        <div class="content">
+          <h3>O que faz o nosso café especial</h3>
+          <p>
+            É especial porque nosso café te mantém acordado o suficiente pra
+            encarar aquele código que você mesmo escreveu às 3 da manhã que você
+            nem mesmo você consegue entender. Ele não resolve seus bugs, mas te
+            dá energia pra fingir que sabe o que tá fazendo. Basicamente, é
+            combustível pra aguentar suas próprias decisões ruins.
+          </p>
+          <a class="btn" href="#">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="title">Nosso <span>Menu</span></h2>
+
+      <div class="boxContainer" id="listCoffes">
+        <!-- Os cards dos cafés serão inseridos aqui -->
+      </div>
+    </section>
+
+    <section class="review" id="review">
+      <h2>Nossos <span>Clientes</span></h2>
+
+      <div class="boxContainer">
+        <div class="box" data-stars="5.5">
+          <div class="clientImage">
+            <img src="./assets/quote-img.png" alt="Comentario Imagem" />
+            <img src="./assets/pic-1.png" alt="Foto cliente" class="profile" />
+          </div>
+
+          <h3 class="name">Jalim Mendes</h3>
+          <p class="assessment">
+            Café maravilhoso, estava com os neuronios desligados e ele me ajudou
+            a acordar e resolver um bug aqui. 6 Estrelas!
+          </p>
+
+          <div class="stars"></div>
+        </div>
+
+        <div class="boxContainer">
+          <div class="box" data-stars="4.5">
+            <div class="clientImage">
+              <img src="./assets/quote-img.png" alt="Comentario Imagem" />
+              <img
+                src="./assets/pic-3.png"
+                alt="Foto cliente"
+                class="profile"
+              />
+            </div>
+
+            <h3 class="name">Jailson Robey</h3>
+            <p class="assessment">
+              Café extremamente gostoso, irei voltar mais vezes.
+            </p>
+
+            <div class="stars"></div>
+          </div>
+        </div>
+
+        <div class="boxContainer">
+          <div class="box" data-stars="4">
+            <div class="clientImage">
+              <img src="./assets/quote-img.png" alt="Comentario Imagem" />
+              <img
+                src="./assets/pic-2.png"
+                alt="Foto cliente"
+                class="profile"
+              />
+            </div>
+
+            <h3 class="name">Mia arthoys</h3>
+            <p class="assessment">
+              O café é bom, mas o meu estava meio morno, mas mesmo assim muito
+              delicioso! recomendo.
+            </p>
+
+            <div class="stars"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="address" id="address">
+      <h2 class="title">Nossa <span>Localização</span></h2>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.4017679151502!2d-52.51311962365212!3d-28.826896275559108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951d4559906fefdd%3A0x578a74c35f83873d!2sCafeteria%20cantinho%20do%20caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1749257130391!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="share">
+        <img src="./assets/instagram-Logo.png" alt="Logo-instagram" />
+        <img src="./assets/linkedin-logo.png" alt="Logo-linkedin" />
+      </div>
+    </footer>
+  </body>
+  <script src="scripts.js"></script>
+</html>
