@@ -21,6 +21,7 @@
 
 body {
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 
 section {
@@ -102,6 +103,7 @@ header {
   align-items: center;
   min-height: 100vh;
 }
+
 .content {
   max-width: 60rem;
 }
@@ -330,4 +332,156 @@ footer {
   width: 100%;
   justify-content: center;
   gap: 50px;
+}
+
+.containerImage img {
+  width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Evita espaços indesejados abaixo da imagem */
+  object-fit: cover; /* Ajusta o recorte da imagem (opcional) */
+}
+
+/* Media Queries para dispositivos menores */
+
+@media (max-width: 1024px) {
+  .about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .row .content {
+    padding: 2rem 1rem;
+  }
+
+  .boxContainer {
+    justify-content: center;
+  }
+
+  .cardCoffe {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .review .box {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header section {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .icons img {
+    margin: 20px 30px 0 30px;
+  }
+
+  .homeContainer section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+  }
+
+  .content h3 {
+    font-size: 2.4rem;
+  }
+
+  .content p {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .boxContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review {
+    padding: 3rem 1rem;
+  }
+
+  .review h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerImage {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .btn,
+  .buttonCard {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  .cardCoffe,
+  .review .box {
+    padding: 1.5rem;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .review .name {
+    font-size: 1.6rem;
+  }
+
+  .review .assessment {
+    font-size: 1.2rem;
+  }
+
+  .starsImg,
+  .HalfstasImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .map {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
