@@ -20,8 +20,10 @@ Projeto prático criado com HTML, CSS e JavaScript, que simula uma cafeteria fei
   <li>✅ Integração com o Google Maps para localização fictícia da cafeteria</li>
 </ul>
 
-<h2>🌍 Links Importantes:</h2>
-<ul>
-  <li>🌐 <strong>Deploy do Projeto:</strong> <a href="https://erikbdasilva20.github.io/Dev-Coffe/" target="_blank">https://erikbdasilva20.github.io/Dev-Coffe/</a></li>
-  <li>📁 <strong>Repositório:</strong> <a href="https://github.com/ErikBdaSilva20/Dev-Coffe" target="_blank">https://github.com/ErikBdaSilva20/Dev-Coffe</a></li>
-</ul>
+<h2>🌟 Links</h2>
+
+📂 Repositório no GitHub: [https://github.com/ErikBdaSilva20/Dev-Coffe](https://github.com/ErikBdaSilva20/Dev-Coffe)
+
+🌐 Projeto no GitHub Pages: [https://erikbdasilva20.github.io/Dev-Coffe/](https://erikbdasilva20.github.io/Dev-Coffe/)
+
+🔗 Perfil no LinkedIn: [https://www.linkedin.com/in/erik-borgessilva20](https://www.linkedin.com/in/erik-borgessilva20)
